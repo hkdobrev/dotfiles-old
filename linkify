@@ -1,0 +1,6 @@
+#!/bin/bash
+
+find ~/.dotfiles/ -maxdepth 1 -name '*' ! -path ~/.dotfiles/ ! -path ~/.dotfiles/.git ! -path ~/.dotfiles/linkify -printf "%f:%p\n" | while IFS=":" read FNAME FPATH
+do
+	ln -svf "$FPATH" $HOME/.$FNAME
+done
