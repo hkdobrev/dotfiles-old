@@ -10,25 +10,39 @@
 	ai = add --interactive
 	amend = commit --amend -C HEAD
 	b = branch
+	bd = branch -d
 	c = commit
 	ch = checkout
+	cleanit = clean -fd
 	cn = config
 	cng = config --global
-	d = diff -y --tool=/usr/bin/vimdiff
+	d = difftool -y --tool=vimdiff
 	dc = diff --cached
 	div = divergence
 	ds = diff --staged
+	f = fetch
 	h = help
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	m = merge
+	nm = branch --no-merged
+	nmm = branch --no-merged master
 	p = push
 	pl = pull
-	s = status
+	r = remote
+	ru = remote update
+	rb = rebase
+	rs = reset
+	s = status -sb
+	sh = show
+	shl = shortlog
+	st = stash
+	t = tag
 [diff]
 	renames = copies
 [pager]
 	color = true
 [color]
-	ui = auto
+	ui = true
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -43,7 +57,7 @@
 	changed = yellow
 	untracked = cyan
 [branch]
-	autosetupmerge = always
+	autosetuprebase = always
 [push]
 	default = tracking
 [github]
