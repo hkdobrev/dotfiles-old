@@ -11,7 +11,7 @@
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
+    if [ -f "$HOME/.bashrc" ] || [ -h "$HOME/.bashrc" ]; then
 	. "$HOME/.bashrc"
     fi
 fi
@@ -20,6 +20,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-source ~/.profile
-source ~/.bashrc

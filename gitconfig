@@ -2,7 +2,9 @@
 	name = Haralan Dobrev
 	email = hkdobrev@gmail.com
 [gui]
-	recentrepo = /home/hkdobrev/Projects/vagrant/clippings
+	recentrepo = /home/hkdobrev/Projects/vagrant/flingflung
+[core]
+	editor = vim
 [alias]
 	a = add
 	aa = add --all
@@ -30,6 +32,7 @@
 	pl = pull
 	r = remote
 	ru = remote update
+	ruo = remote update origin
 	rb = rebase
 	rs = reset
 	s = status -sb
@@ -42,7 +45,11 @@
 [pager]
 	color = true
 [color]
-	ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = auto
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -62,3 +69,7 @@
 	default = tracking
 [github]
 	user = hkdobrev
+[gc]
+	auto=1
+[merge]
+	summary=true
