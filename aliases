@@ -17,7 +17,7 @@ alias o="open"
 alias oo="open ."
 
 # List all files colorized in long format
-alias l="ls -Gl"
+alias l="ls -GlF"
 
 # List all files colorized in long format, including dot files
 alias la="ls -Gla"
@@ -104,3 +104,12 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# Yeoman.io shortcut
+alias y="yeoman"
+
+# hub is best aliased as git
+# it adds GitHub functionality to git
+# https://github.com/defunkt/hub
+# or execute `git browse defunkt/hub` for more info
+alias git="hub"
